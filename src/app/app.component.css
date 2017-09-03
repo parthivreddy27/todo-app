@@ -1,0 +1,41 @@
+
+.main-container {
+	margin: 20px;
+	background-color: #F5F6F7;
+}
+
+.title {
+	text-align: center;
+	font-family: serif;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+label {
+	margin-top: 5px;
+	font-size: 17px;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+li {
+	font-size: 15px;
+	margin: 2px;
+	padding: 2px;
+	background-color: grey;
+}
+
+.display-task-list {
+	padding: 40px;
+	width: 80%;
+}
+
+.close {
+	margin-right: 20px;
+	font-size: 19px;
+}
+
+.btn {
+	background-color: green;
+}

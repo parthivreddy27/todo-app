@@ -1,0 +1,21 @@
+<div class="main-container">
+
+	<h1 class="title">{{title}}</h1>
+
+
+	<div class="form-group">
+	    <label class="control-label col-sm-1">Task:</label>
+	    <div class="col-sm-8">          
+	      <input type="text" class="form-control" [(ngModel)]="task" placeholder="Enter Task">
+	    </div>
+	    <button class="btn" (click)="taskAdd()">Add</button>
+	</div>
+
+	<div class="display-task-list">
+		<ul>
+			<li class="list-task" *ngFor="let task of this.taskArray; let rowIndex = index" [attr.data-index]="rowIndex">
+				{{task}} <i class="fa fa-times close" (click)="removeTask(rowIndex)" aria-hidden="true"></i>
+			</li>
+		</ul>
+	</div>
+</div>
